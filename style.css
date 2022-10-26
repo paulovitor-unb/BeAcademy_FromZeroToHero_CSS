@@ -30,7 +30,7 @@ ul li:nth-child(odd) {
 }
 */
 
-.btn-submit {
+/*.btn-submit {
     padding: 12px;
     background: rgb(0, 111, 215);
     border: none;
@@ -62,4 +62,32 @@ input[type="text"]:disabled {
 }
 input[type="text"]:disabled::placeholder {
     color: white;
+}
+*/
+
+ul {
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0px;
+    background-color: blue;
+    border-radius: 50%;
+}
+ul li::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 140px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+p::first-line {
+    color: red;
 }
